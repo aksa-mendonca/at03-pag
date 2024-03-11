@@ -1,9 +1,11 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .logo {
@@ -13,7 +15,38 @@ body {
 
 .link {
     margin: 35px;
-    background-color: #f7f7f7;
+    background-color: whitesmoke;
     color: black;
+    
+}
+
+.info-title{
+    font-size:larger;
+}
+
+.info-title, .info-subtitle {
+    font-weight: bold;
+}
+
+.img-bike {
+    height: 250px;
+    width: 350px;
+}
+
+.view-more-button {
+    color: whitesmoke;
+    background-color: #ee2211;
+}
+
+.view-more-button, .link {
     text-decoration: none;
+}
+
+.advantages {
+    font-size: 64px;
+    color: #c6c6c6;
+}
+
+.paragraph {
+    font-size: 15px;
 }
