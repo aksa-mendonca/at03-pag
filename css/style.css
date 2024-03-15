@@ -1,29 +1,35 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
+.nav {
+  display: flex;
+}
+
 .logo {
   height: 30px;
-  margin: 25px 0 50px;
+  margin: 25px 0 10px;
 }
 
 .link {
   margin: 35px;
   color: black;
-  background-color: white;
 }
 
 .info {
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 50px 100px;
+  padding: 50px 30px;
+}
+
+.paragraph {
+  text-align: left;
+  grid-column-start: 2;
 }
 
 .view-more-button, .link {
@@ -32,9 +38,10 @@ body {
 
 .info-title {
   font-size: 25px;
+  margin-bottom: 10px;
 }
 
-.info-subtitle, footer, .paragraph {
+.info-subtitle, footer, .paragraph, .description {
   font-size: 20px;
 }
 
@@ -43,12 +50,11 @@ h1, h2, h3 {
 }
 
 .img-bike {
-  height: 100%;
-  width: 400px;
-  margin: 50px 0 0 0;
+  width: 100%;
 }
 
 .view-more-button {
+  margin-top: 10px;
   padding: 7px 12px;
   color: white;
   background-color: #ee2211;
@@ -57,19 +63,26 @@ h1, h2, h3 {
 .advantages-title {
   font-size: 64px;
   color: #c6c6c6;
-  
+  padding: 50px 30px;
+}
+
+.description, .advantages-title {
+  text-align: right;
 }
 
 .advantages-and-characteristics {
+  width: 1000px;
   background-color: #f7f7f7;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .advantages {
-  background-color: white;
+  text-align: justify;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-
+.advantages, .info, .link {
+  background-color: white;
+}
